@@ -1,9 +1,10 @@
 name: Random Cron
 on:
-  workflow_run:
-    workflows: ["刷步数"]
-    types:
-      - completed
+  # 👇 注释掉下面这4行，禁止自动触发
+  # workflow_run:
+  #   workflows: ["刷步数"]
+  #   types:
+  #     - completed
   workflow_dispatch:
 
 jobs:
